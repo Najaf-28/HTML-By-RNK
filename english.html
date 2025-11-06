@@ -587,8 +587,45 @@
 &lt;/body&gt;
 &lt;/html&gt;
 </code></pre>
-      <h3>14. Last thing</h3>
-      <p>In this chapter we learned about common tags. Now we'll go to the next Lesson. So let's move to Lesson 3.</p>
+      <h3>14. How to go from one HTML file to another</h3>
+<p>Sometimes, while creating a website, we need not only one but 4 HTML files. So here’s the thing from the main HTML file, how do we move to another HTML file? You’ll see an example of this below.</p>
+
+<h3>File name is index.html</h3>
+<pre><code class="language-html">
+&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+    &lt;title&gt;Title&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+   &lt;p&gt;This file name is index.html&lt;/p&gt;
+   &lt;p&gt;Click this &lt;a href="/about.html"&gt;About&lt;/a&gt; if you want to see about this website.&lt;/p&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+
+<h3>File name is about.html</h3>
+<pre><code class="language-html">
+&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+    &lt;title&gt;Title&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+   &lt;p&gt;This file name is about.html&lt;/p&gt;
+   &lt;p&gt;This will make you a Web Designer&lt;/p&gt;
+   &lt;p&gt;If you want to go back click here &lt;a href="/index.html"&gt;Home&lt;/a&gt;&lt;/p&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+
+<h3>Explanation</h3>
+<p>In this example, there are two files index.html and about.html. Whenever you host a website, the index.html file is always the first one that Chrome shows. After that, you can make other HTML files and move between them. To move from one HTML file to another, we use the anchor tag and write the file name inside the href attribute. It’s important to always put <b>/</b> at the start. If the HTML file you want to go to is inside a folder, you also need to write that folder’s name. For example, if about.html is inside a folder named main, then to open it you will write <b>main/about.html</b>.</p>
+
       <h2>Practicals</h2>
       <h3>Q1. Create a nice website using these tags: p, h1, button, a, img, i, b, u.</h3>
 
@@ -612,7 +649,7 @@
       <h3>1. Ordered List</h3>
       <p>In ordered list, first we write ol tag, then inside it we write li tag. li means list item that we want to
         display. An example is given below.</p>
-      <pre><code class="language-html">
+       <pre><code class="language-html">
 &lt;!DOCTYPE html&gt;
 &lt;html lang="en"&gt;
 &lt;head&gt;
@@ -621,14 +658,14 @@
     &lt;title&gt;Title&lt;/title&gt;
 &lt;/head&gt;
 &lt;body&gt;
-   &lt;p&gt;This is an Ordered List&lt;/p&gt;
+   &lt;p&gt;This is an Order List&lt;/p&gt;
    &lt;ol&gt;
-       &lt;li&gt;Boil Water: Take one cup of water in a pan.&lt;/li&gt;
-       &lt;li&gt;Add Basics: Put in sugar (to taste) and tea leaves (one teaspoon).&lt;/li&gt;
-       &lt;li&gt;Crush Spices: Crush ginger (or cardamom) and add it to the water.&lt;/li&gt;
+       &lt;li&gt;Boil Water: Take one cup of water in a pan.&lt;li&gt;
+       &lt;li&gt;Add Basics: Put in sugar and tea leaves.&lt;/li&gt;
+       &lt;li&gt;Crush Spices: Crush ginger and add it to the water.&lt;/li&gt;
        &lt;li&gt;Let it Boil: Let the mixture boil well for about 2-3 minutes. This gets the flavour out.&lt;/li&gt;
        &lt;li&gt;Add Milk: Pour in the milk.&lt;/li&gt;
-       &lt;li&gt;Simmer Gently: Let it simmer (boil slowly) for another 1-2 minutes.&lt;/li&gt;
+       &lt;li&gt;Simmer Gently: Let it simmer for another 1-2 minutes.&lt;/li&gt;
        &lt;li&gt;Strain It: Turn off the gas and strain the tea into a cup.&lt;/li&gt;
        &lt;li&gt;Enjoy Hot: Your hot tea is ready! Enjoy it with a biscuit.&lt;/li&gt;
     &lt;/ol&gt;   
@@ -637,14 +674,15 @@
 </code></pre>
       <div class="output-label">Output:</div>
       <iframe class="auto-height-iframe" srcdoc="
-    <p>This is an Ordered List</p>
-        <ol>
+    <p>This is an Order List</p>
+
+      <ol>
        <li>Boil Water: Take one cup of water in a pan.</li>
-       <li>Add Basics: Put in sugar (to taste) and tea leaves (one teaspoon).</li>
-       <li>Crush Spices: Crush ginger (or cardamom) and add it to the water.</li>
+       <li>Add Basics: Put in sugar and tea leaves.</li>
+       <li>Crush Spices: Crush ginger and add it to the water.</li>
        <li>Let it Boil: Let the mixture boil well for about 2-3 minutes. This gets the flavour out.</li>
        <li>Add Milk: Pour in the milk.</li>
-       <li>Simmer Gently: Let it simmer (boil slowly) for another 1-2 minutes.</li>
+       <li>Simmer Gently: Let it simmer for another 1-2 minutes.</li>
        <li>Strain It: Turn off the gas and strain the tea into a cup.</li>
        <li>Enjoy Hot: Your hot tea is ready! Enjoy it with a biscuit.</li>
       </ol>   
