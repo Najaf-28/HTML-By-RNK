@@ -214,12 +214,12 @@
         <a href="#lesson3" class="lesson-link">Lesson 3</a>
         <a href="#lesson4" class="lesson-link">Lesson 4</a>
         <a href="#lesson5" class="lesson-link">Lesson 5</a>
+        <a href="#lesson6" class="lesson-link">Lesson 6</a>
       </div>
     </div>
     <br>
     <div id="lesson1" class="lesson-section">
       <h1>Lesson - 1: Introduction to HTML</h1>
-      <h2>Lesson 1: Introduction to HTML</h2>
       <h3>1.What is HTML CSS JS</h3>
       <p>Sab se pehle to HTML ks full form hota hai <b>Hyper Text Markup Language</b>. Or CSS ka full form hota hai
         <b>Cascading Style Sheets</b>. Or JS ka full form hota hai <b>Java Script</b>. Ab ham samajte hai ke in sab ka
@@ -1405,9 +1405,71 @@
       <h3>Agar ap log yaha tak a gaye or ap ko sab kuch ache se a gya hai to ap log HTML sih choke ho or ab ap log agge
         barh sakte ho CSS ya JS ki taraf.</h3>
     </div>
+<div id="lesson6" class="lesson-section">
+<h1>6. SEO kya hota hai (Search Engine Optimization)</h1>
+<p>Jab bhi hum koi website banate hain to hum chahte hain ke wo Google ya kisi bhi search engine par dikhai de. Lekin ye tabhi mumkin hota hai jab hum apni website ka SEO theek se karein. SEO ka matlab hota hai Search Engine Optimization. Ye aise tareeqe hain jinke zariye hum apni website ko search engine ke liye behtar banate hain taa ke wo upar dikhai de.</p>
 
+<h3>SEO kyu zaroori hai?</h3>
+<p>Agar aap chahte ho ke log aapki website tak asani se pahunch sakein to SEO karna bohot zaroori hai. Agar SEO nahi karte to aapki website search result mein peeche chali jati hai aur log use dekh nahi pate.</p>
 
+<h3>SEO ke basic points</h3>
+<ul>
+  <li>Website ke <b>title</b> ko hamesha unique aur clear rakho.</li>
+  <li><b>meta description</b> likho taa ke Google samjhe ke page kis baare mein hai.</li>
+  <li><b>Keywords</b> use karo jo log search karte hain.</li>
+  <li>Website fast load honi chahiye.</li>
+  <li>Images mein <b>alt</b> attribute likhna zaroori hai.</li>
+</ul>
 
+<h3>Example</h3>
+<pre><code class="language-html">
+&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+    &lt;title&gt;My Awesome Website&lt;/title&gt;
+    &lt;meta name="description" content="This website teaches HTML in Urdu and English in a very simple way."&gt;
+    &lt;meta name="keywords" content="HTML, Urdu HTML, Learn HTML, Web Design"&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;h1&gt;Welcome to My Website&lt;/h1&gt;
+    &lt;p&gt;This is an example of SEO in HTML.&lt;/p&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+
+<h3>Explanation</h3>
+<p>Is main meta tag ke andar attributes use kya hai name="" is main ham ne ek jagha description dala hai ye chrome ko batata hai ke hamari website kis bare main hai content ke andar phir description likhna hai.name="Keywords" ye ye karta hai ke agar koy search kare Learn HTML in Urdu to yaha Keywords use hoyr hai jese Learn Urdu to Keywords ye karta hai ke batata hai chrome ko ke agar koy ye Keywords search kare to hamari website dikha dena.</p>
+<h3>Use of header, main, footer tags in SEO</h3>
+<p>Website ke contetn ko 3 hiso main bant do ek hoga os ka Head ek hogi Main Body ek hoga Footer ab in ko kese use karna hai dekho isi website ko dekhe opar jakar title likha hoa hai Full HTML corse by Raja Najaf Khan or sath main ek button hai or niche bhi buttons hai to is ko maine header tag ke andar likha hai baki jo sare lesson tum dekh rahe ho ise mene main tag ke andar likha hai or main ke andar ek tag ata hai section tag is ke andar ap alag alag section dal sakte ho jese mene main ke andar 6 section banaye hai ab tum khod hi samaj jao khair footer main ham apne bare main information likhte hai youtube ka link dala hota hai ya to copyright lagaya hota hai.Is ka strucutre niche hai.</p>
+<pre><code class="language-html">
+&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+    &lt;title&gt;Title&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+   &lt;header&gt;
+     &lt;!-- Yaha ap apna title likh sakte ho ya kuch aisa jo website ke top par show karwana hai --&gt;
+   &lt;/header&gt;
+   &lt;main&gt;
+     &lt;!-- Yaha main content aye ga --&gt;
+       &lt;section&gt;
+         &lt;!-- Ap log content ko sections main bant ke bhi likh sakte hai --&gt;
+       &lt;/section&gt;
+   &lt;/main&gt;
+   &lt;footer&gt;
+   &lt;!-- Yaha par ap log apne Youtube ka link ya phir kisi or cheiz ka link dal sakte ho --&gt;
+   &lt;!-- Ya to phir copyright bhi laga sakte ho yaha pe --&gt;
+   &lt;/footer&gt;
+   
+&lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+</div>
   </div>
 
 
@@ -1448,7 +1510,7 @@
         const targetId = this.getAttribute('href');
         const targetElement = document.querySelector(targetId);
         window.scrollTo({
-          top: targetElement.offsetTop - 20,
+          top: targetElement.offsetTop - 80,
           behavior: 'smooth'
         });
       });
